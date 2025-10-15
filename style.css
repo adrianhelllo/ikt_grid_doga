@@ -15,6 +15,7 @@
 body {
     font-family: "Roboto", sans-serif;
     padding: 1rem;
+    font-size: 1.1rem;
 }
 
 h1 {
@@ -42,9 +43,13 @@ nav a:hover {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding-inline: 1rem;
+}
+
+.list-m {
+    grid-template-columns: 2fr 1fr;
 }
 
 article {
@@ -52,14 +57,12 @@ article {
     flex-direction: column;
     background-color: var(--SECONDARY);
     border-radius: 0.5rem;
-    font-size: 1.1rem;
     line-height: 1.75;
     padding-bottom: 1rem;
 }
 
 article h2 {
     color: var(--ACCENT);
-    font-size: 1.1rem;
     font-weight: 400;
     padding: 0.5rem 1rem;
     flex: 0 0 auto;
@@ -81,10 +84,19 @@ article, article img, aside img {
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+ol {
+    margin-inline: 2rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
 footer {
     margin-top: 1rem;
     color: var(--ACCENT);
     text-align: center;
-    font-size: 1.1rem;
 }
 
