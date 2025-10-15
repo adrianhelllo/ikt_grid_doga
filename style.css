@@ -3,7 +3,7 @@
 :root {
     --ACCENT: rgb(22, 128, 87);
     --ACCENT-LIGHT: rgb(32, 190, 130);
-    --SECONDARY: #ccc;
+    --SECONDARY: #ebebeb;
 }
 
 * {
@@ -45,5 +45,37 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     padding-inline: 1rem;
+}
+
+article {
+    background-color: var(--SECONDARY);
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.75;
+    padding-bottom: 1rem;
+
+}
+
+article h2 {
+    color: var(--ACCENT);
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+}
+
+img {
+    max-width: 100%;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.img-cont {
+    background-color: #fff;
+    padding: 1rem;
+    height: 95%
+}
+
+article, article img, aside img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
